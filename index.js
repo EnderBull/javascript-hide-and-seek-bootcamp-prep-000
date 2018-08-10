@@ -36,9 +36,8 @@ function deepestChild(){
   
    for (let i = 0; i < dc.length-1; i++){
      if (dc[i] === dc.length-1){
-       
+       test = dc[i].querySelector('div');
      }
-    test = dc[i].querySelector('div');
   }
   
   return test;
