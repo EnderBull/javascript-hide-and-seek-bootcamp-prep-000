@@ -31,12 +31,12 @@ function increaseRankBy(n){
 function deepestChild(){
  
   var dc = document.getElementById("grand-node").querySelectorAll('div')
-  var test;
+  var find;
   
    for (let i = 0; i < dc.length-1; i++){
-       test = dc[i].querySelector('div');
+       find = dc[i].querySelector('div');
   }
-  return test;
+  return find;
 }
 
 
