@@ -28,9 +28,11 @@ function increaseRankBy(n){
 
 /*----------------------------------*/
 
-function deepestChild(){
-
-  const dc = document.getElementById('grand-node').querySelector('div div div div')
-  
-  return dc;
+function deepestChild() {
+  var lis=document.getElementById("grand-node").querySelectorAll("div");
+  var test;
+  for(let i=0;i<lis.length-1;i++) {
+    test=lis[i].querySelector("div");
+  }
+return test;
 }
