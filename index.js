@@ -28,13 +28,17 @@ function increaseRankBy(n){
 
 /*----------------------------------*/
 
-function deepestChild() {
-  var lis=document.getElementById("grand-node").querySelectorAll("div");
+function deepestChild(){
+ 
+  const dc = document.getElementById('grand-node').querySelector('div')
+  
   var test;
-  for(let i=0;i<lis.length-1;i++) {
-    test=lis[i].querySelector("div");
+  
+   for (let i = 0; i < dc.length-1; i++){
+     if (dc[i] === dc.length-1){
+       test = dc[i].querySelector('div');
+     }
   }
-return test;
+  
+  return test;
 }
-
-
