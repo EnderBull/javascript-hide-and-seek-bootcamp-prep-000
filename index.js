@@ -35,10 +35,17 @@ function deepestChild(){
   var test;
   
    for (let i = 0; i < dc.length-1; i++){
-       test = dc[i].querySelectorAll('div');
+       test = dc[i].querySelector('div');
   }
   
   return test;
 }
 
-
+function deepestChild() {
+  var lis=document.getElementById("grand-node").querySelectorAll("div");
+  var test;
+  for(let i=0;i<lis.length-1;i++) {
+    test=lis[i].querySelector("div");
+  }
+return test;
+}
