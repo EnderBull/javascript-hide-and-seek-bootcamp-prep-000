@@ -33,8 +33,7 @@ function deepestChild(){
   const dc = document.getElementById('grand-node').querySelector('div')
   
    for (let i = 0; i < dc.length; i++){
-    test = 
+    test = dc[i].querySelector('div')
   }
-  }
- 
+  return test;
 }
